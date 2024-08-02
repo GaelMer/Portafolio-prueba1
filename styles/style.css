@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*1 rem = 16px*/
+
+:root
+{
+    --colorprimario: #000000;
+    --colorsecundario: #f6f6f6;
+    --colorterciario: #22d4fd;
+    --colorhover: #272727;
+
+    --fuentetexto: 'Montserrat', sans-serif;
+    --fuentetitulos: "Krona One", sans-serif;
+}
+
+body
+{
+    background-color: var(--colorprimario);
+    color: var(--colorsecundario);
+}
+
+.header
+{
+    padding: 2% 0% 0% 15%;
+}
+
+.header-menu
+{
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link
+{
+    font-family: var(--fuentetexto);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--colorterciario);
+    text-decoration: none;
+}
+
+.presentacion
+{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion-contenido
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion-contenido-titulo
+{
+    font-size: 2.25rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tituloDestaque
+{
+    color: var(--colorterciario);
+}
+
+.presentacion-contenido-parrafo
+{
+    font-size: 1.5rem;
+    font-family: var(--fuentetexto);
+}
+
+.presentacion-enlaces
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.presentacion-enlaces-subtitulo
+{
+    font-family: var(--fuentetexto);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion-enlaces-link
+{
+    width: 60%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8%;
+    font-size: 1.5rem;
+    font-family: var(--fuentetexto);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--colorsecundario);
+    border: 2px solid var(--colorterciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion-enlaces-link:hover
+{
+    background-color: var(--colorhover);
+}
+
+.anamaria:hover
+{
+    transition: transform 250ms ease;
+    transform: translateY(+21.5px);
+}
+
+.anamaria
+{
+    width: 50%;
+    transition: transform 250ms ease;
+}
+
+.footer
+{
+    background-color: var(--colorterciario);
+    text-align: center;
+    padding: 23.64px;
+    font-size: 1.5rem;
+    font-family: var(--fuentetexto);
+    font-weight: 400;
+    color: var(--colorprimario);
+}
+
+@media (max-width:1250px)
+{
+    .presentacion
+    {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .header
+    {
+        padding: 10%;
+    }
+
+    .header-menu
+    {
+        justify-content: center;
+    }
+
+    .presentacion-contenido
+    {
+        width: auto;
+    }
+}
